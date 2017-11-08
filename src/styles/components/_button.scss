@@ -1,0 +1,43 @@
+// Big Button
+.big-button {
+  background: radial-gradient($btnGray,$btnFade);
+  //background: radial-gradient(black, white);
+  border-color:#24292E;
+  border-radius: 4px;
+  border-width: 1px;
+  
+  color: $btnText;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $m-size;
+  padding: $m-size;
+  width: 90%;
+  
+}
+
+.big-button:disabled {
+  opacity: .5;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
+}
+
+// Button
+.button {
+  background: $btnGray;
+  border: none;
+  border-bottom: .3rem solid darken,($btnFade 10%);
+  color: $btnText;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+.button--link {
+  background: none;
+  border: none;
+  color: whitesmoke;
+  padding: 0;
+}
